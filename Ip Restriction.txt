@@ -1,0 +1,18 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": "*",
+            "Action": "execute-api:Invoke",
+            "Resource": "arn:aws:execute-api:eu-west-1:435985664538:uujyo9n4z3/*/POST/sendnotification",
+            "Condition": {
+                "IpAddress": {
+                    "aws:SourceIp": "52.214.30.144/32"
+                }
+            }
+        }
+    ]
+}
+
+IP address : 193.191.180.62
